@@ -7,6 +7,7 @@ declare module cucumber {
 
 	export interface CallbackStepDefinition{
 		pending : () => PromiseLike<any>;
+		fail(string): void;
 		(errror?:any):void;
 	}
 
